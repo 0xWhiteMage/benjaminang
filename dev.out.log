@@ -1,0 +1,413 @@
+  ▲ Next.js 14.2.5
+  - Local:        http://localhost:3939
+  - Network:      http://0.0.0.0:3939
+
+ ✓ Starting...
+ ✓ Ready in 1155ms
+ ○ Compiling / ...
+ ✓ Compiled /work in 12.7s (618 modules)
+ GET /_next/static/webpack/2e60323e9b5d1507.webpack.hot-update.json 404 in 12826ms
+ GET / 200 in 12203ms
+ ✓ Compiled /about in 193ms (631 modules)
+ GET / 200 in 94ms
+ ✓ Compiled /speaking in 196ms (649 modules)
+ GET /work 200 in 61ms
+ ✓ Compiled /work/[slug] in 144ms (651 modules)
+ GET /work/balance-creative 200 in 420ms
+ GET /work/creative-business-education 200 in 60ms
+ GET /about 200 in 40ms
+ GET /speaking 200 in 64ms
+ ✓ Compiled /credentials in 122ms (669 modules)
+ GET /credentials 200 in 150ms
+ GET /speaking 200 in 32ms
+ GET /credentials 200 in 77ms
+ GET /work 200 in 46ms
+ GET /work/balance-creative 200 in 78ms
+ GET /work 200 in 46ms
+ ✓ Compiled in 112ms (318 modules)
+ ✓ Compiled in 95ms (318 modules)
+ GET /speaking 200 in 93ms
+ ✓ Compiled /credentials in 69ms (323 modules)
+ ✓ Compiled /contact in 338ms (681 modules)
+ ✓ Compiled / in 57ms (358 modules)
+ GET /speaking 200 in 84ms
+ GET /speaking 200 in 65ms
+ ✓ Compiled /credentials in 67ms (323 modules)
+ GET /credentials 200 in 84ms
+ GET /credentials 200 in 49ms
+ ✓ Compiled /contact in 68ms (355 modules)
+ ✓ Compiled / in 43ms (363 modules)
+ GET / 200 in 65ms
+ GET /work 200 in 46ms
+ GET /about 200 in 45ms
+ GET /about 200 in 77ms
+ GET /about 200 in 61ms
+ GET / 200 in 23ms
+ GET /work 200 in 61ms
+ ✓ Compiled in 115ms (331 modules)
+ ✓ Compiled in 152ms (667 modules)
+ ✓ Compiled in 195ms (667 modules)
+ ✓ Compiled in 117ms (667 modules)
+ ✓ Compiled in 278ms (657 modules)
+ ✓ Compiled in 74ms (331 modules)
+ ✓ Compiled in 60ms (331 modules)
+ ✓ Compiled in 66ms (331 modules)
+ ✓ Compiled in 78ms (331 modules)
+ ✓ Compiled in 232ms (667 modules)
+ GET / 200 in 94ms
+ GET /work 200 in 55ms
+ GET /about 200 in 73ms
+ GET /speaking 200 in 80ms
+ GET /credentials 200 in 55ms
+ GET /work 200 in 27ms
+ GET / 200 in 38ms
+ GET /about 200 in 38ms
+ GET /credentials 200 in 26ms
+ GET /speaking 200 in 85ms
+ GET /speaking 200 in 52ms
+ GET /credentials 200 in 76ms
+ GET /about 200 in 47ms
+ GET / 200 in 81ms
+ ✓ Compiled /work/[slug] in 179ms (340 modules)
+ GET /work 200 in 88ms
+ GET /work/balance-creative 200 in 53ms
+ GET /work 200 in 63ms
+ GET /work/genesis-motion-design 200 in 59ms
+ GET /about 200 in 64ms
+ GET /credentials 200 in 56ms
+ GET /credentials 200 in 66ms
+ ✓ Compiled /contact in 144ms (372 modules)
+ GET /contact 200 in 59ms
+ GET / 200 in 47ms
+ GET /about 200 in 20ms
+ GET /credentials 200 in 46ms
+ GET /work 200 in 71ms
+ GET / 200 in 29ms
+ GET /speaking 200 in 39ms
+ GET /credentials 200 in 70ms
+ GET / 200 in 21ms
+ GET /credentials 200 in 31ms
+ GET /speaking 200 in 64ms
+ GET /about 200 in 64ms
+ ✓ Compiled in 100ms (352 modules)
+ ✓ Compiled in 171ms (688 modules)
+ GET / 200 in 65ms
+ ✓ Compiled in 70ms (352 modules)
+ ✓ Compiled in 60ms (352 modules)
+ ✓ Compiled in 99ms (352 modules)
+ GET / 200 in 53ms
+ ✓ Compiled /work in 139ms (363 modules)
+ GET /work 200 in 73ms
+ GET /work 200 in 50ms
+ ✓ Compiled /work/[slug] in 84ms (372 modules)
+ GET /work/genesis-motion-design 200 in 86ms
+ ✓ Compiled in 71ms (365 modules)
+ ✓ Compiled in 69ms (365 modules)
+ ✓ Compiled in 61ms (365 modules)
+ ✓ Compiled /about in 47ms (372 modules)
+ GET /about 200 in 66ms
+ ✓ Compiled in 69ms (329 modules)
+ ✓ Compiled in 211ms (665 modules)
+ GET /about 200 in 113ms
+ GET /speaking 200 in 65ms
+ GET / 200 in 60ms
+ ✓ Compiled /work in 37ms (340 modules)
+ GET /work 200 in 86ms
+ GET /work/balance-creative 200 in 50ms
+ GET /work/genesis-motion-design 200 in 46ms
+ GET /about 200 in 69ms
+ GET /speaking 200 in 57ms
+ GET /credentials 200 in 61ms
+ GET /work 200 in 51ms
+ GET /work/genesis-motion-design 200 in 60ms
+ GET /credentials 200 in 27ms
+ GET /speaking 200 in 47ms
+ GET /work/balance-creative 200 in 57ms
+ GET /about 200 in 63ms
+ GET /work/genesis-motion-design 200 in 62ms
+ GET /about 200 in 18ms
+ GET /credentials 200 in 45ms
+ GET /work/balance-creative 200 in 53ms
+ GET /work/genesis-motion-design 200 in 60ms
+ GET /speaking 200 in 42ms
+ GET /credentials 200 in 46ms
+ GET /credentials 200 in 55ms
+ ✓ Compiled /contact in 82ms (361 modules)
+ GET /contact 200 in 79ms
+ ✓ Compiled /work in 45ms (372 modules)
+ GET /work 200 in 40ms
+ GET /about 200 in 21ms
+ GET / 200 in 37ms
+  ▲ Next.js 14.2.5
+  - Local:        http://localhost:3939
+  - Network:      http://0.0.0.0:3939
+
+ ✓ Starting...
+ ✓ Ready in 1758ms
+ ○ Compiling /work ...
+ ✓ Compiled / in 3s (615 modules)
+ GET / 200 in 1248ms
+ GET /work 200 in 57ms
+ ✓ Compiled /work/[slug] in 268ms (627 modules)
+ GET /work/beat-bots 200 in 82ms
+ ✓ Compiled in 64ms (323 modules)
+ GET / 200 in 64ms
+ GET /work 200 in 59ms
+ GET /work/beat-bots 200 in 56ms
+ ✓ Compiled /about in 182ms (640 modules)
+ GET /about 200 in 234ms
+ ✓ Compiled /speaking in 144ms (648 modules)
+ GET /speaking 200 in 208ms
+ ✓ Compiled /credentials in 325ms (670 modules)
+ GET /credentials 200 in 381ms
+ GET /credentials 200 in 33ms
+ GET /work/beat-bots 200 in 42ms
+ GET /work 200 in 46ms
+ GET / 200 in 67ms
+ GET /credentials 200 in 63ms
+ GET /work/beat-bots 200 in 63ms
+ GET /work 200 in 21ms
+ GET /work 200 in 19ms
+ GET /work/beat-bots 200 in 60ms
+ GET /about 200 in 21ms
+ GET /credentials 200 in 72ms
+ GET /credentials 200 in 78ms
+ GET /credentials 200 in 73ms
+ GET /credentials 200 in 43ms
+ GET /credentials 200 in 50ms
+ GET /credentials 200 in 40ms
+ GET /credentials 200 in 52ms
+ GET /credentials 200 in 77ms
+ GET /credentials 200 in 52ms
+ GET /speaking 200 in 54ms
+ GET /speaking 200 in 38ms
+ GET /speaking 200 in 70ms
+ GET /about 200 in 48ms
+ GET /about 200 in 14ms
+ GET /speaking 200 in 65ms
+ GET /credentials 200 in 37ms
+ GET /work 200 in 18ms
+ GET /work/beat-bots 200 in 50ms
+ GET /work/beat-bots 200 in 18ms
+ GET /speaking 200 in 59ms
+ GET /work/beat-bots 200 in 45ms
+ GET / 200 in 57ms
+ GET / 200 in 30ms
+ GET / 200 in 40ms
+ GET / 200 in 39ms
+ GET / 200 in 49ms
+ ✓ Compiled in 99ms (332 modules)
+ ✓ Compiled in 78ms (332 modules)
+ ✓ Compiled in 156ms (332 modules)
+ ✓ Compiled in 78ms (332 modules)
+ ✓ Compiled in 262ms (654 modules)
+ GET / 200 in 84ms
+ ✓ Compiled in 134ms (654 modules)
+ ✓ Compiled in 104ms (654 modules)
+ ✓ Compiled in 90ms (335 modules)
+ ✓ Compiled in 151ms (654 modules)
+ ✓ Compiled in 98ms (654 modules)
+ GET / 200 in 93ms
+ GET /work/beat-bots 200 in 76ms
+ ✓ Compiled /work in 138ms (346 modules)
+ GET /work 200 in 68ms
+ GET /about 200 in 26ms
+ ✓ Compiled /contact in 330ms (706 modules)
+ GET /credentials 200 in 84ms
+ ✓ Compiled in 176ms (697 modules)
+ GET /credentials 200 in 92ms
+ ✓ Compiled in 254ms (707 modules)
+ GET /credentials 200 in 75ms
+ GET /credentials 200 in 50ms
+ GET / 200 in 24ms
+ ✓ Compiled in 89ms (337 modules)
+ ✓ Compiled in 46ms (337 modules)
+ GET / 200 in 82ms
+ ✓ Compiled in 97ms (337 modules)
+ ✓ Compiled in 80ms (337 modules)
+ ✓ Compiled in 65ms (337 modules)
+ ✓ Compiled in 128ms (337 modules)
+ ✓ Compiled in 80ms (337 modules)
+ GET /work 200 in 48ms
+ GET /about 200 in 18ms
+ GET /speaking 200 in 23ms
+ GET /speaking 200 in 70ms
+ GET /credentials 200 in 74ms
+ GET / 200 in 34ms
+ GET /work 200 in 63ms
+ ✓ Compiled /work/[slug] in 173ms (346 modules)
+ GET /work/beat-bots 200 in 89ms
+ GET /about 200 in 22ms
+ GET / 200 in 21ms
+ ✓ Compiled in 145ms (338 modules)
+ ✓ Compiled in 83ms (338 modules)
+ ✓ Compiled in 247ms (676 modules)
+ GET / 200 in 89ms
+ ✓ Compiled in 148ms (676 modules)
+ GET / 200 in 71ms
+ GET /work 200 in 41ms
+ GET / 200 in 52ms
+ ✓ Compiled in 241ms (666 modules)
+ ✓ Compiled in 100ms (676 modules)
+ ✓ Compiled in 90ms (676 modules)
+ ✓ Compiled in 94ms (676 modules)
+ ✓ Compiled in 109ms (666 modules)
+ ✓ Compiled in 108ms (676 modules)
+ GET / 200 in 86ms
+ ✓ Compiled in 127ms (660 modules)
+ ✓ Compiled in 62ms (335 modules)
+ GET / 200 in 59ms
+ GET / 200 in 82ms
+ GET / 200 in 24ms
+ GET / 200 in 83ms
+ GET / 200 in 59ms
+ GET / 200 in 60ms
+ GET /work 200 in 73ms
+ GET /work 200 in 64ms
+ GET /about 200 in 82ms
+ GET /about 200 in 72ms
+ ✓ Compiled /credentials in 162ms (343 modules)
+ GET /credentials 200 in 247ms
+ GET /credentials 200 in 53ms
+ GET / 200 in 57ms
+ GET /work 200 in 50ms
+ GET /work 200 in 73ms
+ GET / 200 in 80ms
+ GET / 200 in 66ms
+ GET /speaking 200 in 60ms
+ GET /credentials 200 in 66ms
+ ✓ Compiled in 99ms (343 modules)
+ ✓ Compiled in 42ms (337 modules)
+ ✓ Compiled in 58ms (337 modules)
+ ✓ Compiled in 132ms (662 modules)
+ ✓ Compiled in 150ms (672 modules)
+ GET /credentials 200 in 55ms
+ ✓ Compiled in 137ms (337 modules)
+ ✓ Compiled in 53ms (337 modules)
+ ✓ Compiled /contact in 87ms (369 modules)
+ GET /contact 200 in 60ms
+ GET /speaking 200 in 47ms
+ GET /credentials 200 in 66ms
+ GET /credentials 200 in 37ms
+ GET /credentials 200 in 63ms
+ GET /credentials 200 in 62ms
+ GET /speaking 200 in 36ms
+ GET /work 200 in 23ms
+ ✓ Compiled in 209ms (682 modules)
+ ✓ Compiled in 67ms (357 modules)
+ ✓ Compiled in 210ms (692 modules)
+ GET /speaking 200 in 88ms
+ GET /credentials 200 in 39ms
+ GET /about 200 in 17ms
+ ✓ Compiled in 86ms (357 modules)
+ ✓ Compiled in 89ms (357 modules)
+ ✓ Compiled in 155ms (692 modules)
+ ✓ Compiled in 106ms (692 modules)
+ GET /speaking 200 in 82ms
+ GET /speaking 200 in 51ms
+ GET /about 200 in 77ms
+ GET /work 200 in 58ms
+ GET /work 200 in 61ms
+ ✓ Compiled in 257ms (682 modules)
+ ✓ Compiled in 129ms (682 modules)
+ ✓ Compiled in 121ms (692 modules)
+ ✓ Compiled in 107ms (357 modules)
+ ✓ Compiled in 89ms (357 modules)
+ ✓ Compiled in 110ms (692 modules)
+ ✓ Compiled in 131ms (692 modules)
+ GET /about 200 in 60ms
+ ✓ Compiled / in 159ms (366 modules)
+ GET / 200 in 63ms
+ ✓ Compiled /work/[slug] in 101ms (375 modules)
+ GET /work/beat-bots 200 in 86ms
+ GET /speaking 200 in 59ms
+ GET /credentials 200 in 57ms
+ GET /about 200 in 58ms
+ GET /work 200 in 26ms
+ GET / 200 in 35ms
+ ✓ Compiled in 226ms (691 modules)
+ GET /work 200 in 91ms
+ GET /work 200 in 50ms
+ GET /work 200 in 57ms
+ GET /work 200 in 57ms
+ ✓ Compiled in 180ms (691 modules)
+ GET /work 200 in 54ms
+ GET /work 200 in 69ms
+ GET /work 200 in 31ms
+ GET /work 200 in 49ms
+ ✓ Compiled in 182ms (701 modules)
+ GET /work 200 in 63ms
+ ✓ Compiled in 131ms (669 modules)
+ ✓ Compiled in 135ms (669 modules)
+ GET /work 200 in 94ms
+ GET /work 200 in 20ms
+ GET /work 200 in 57ms
+ GET /work 200 in 49ms
+ GET /work 200 in 79ms
+ GET /work 200 in 69ms
+ ✓ Compiled in 209ms (659 modules)
+ ✓ Compiled in 145ms (659 modules)
+ ✓ Compiled in 130ms (669 modules)
+ ✓ Compiled in 148ms (669 modules)
+ GET / 200 in 68ms
+ GET /work 200 in 62ms
+ GET /work 200 in 71ms
+ GET /work 200 in 45ms
+ GET /work 200 in 66ms
+ GET /work 200 in 42ms
+ GET /work 200 in 82ms
+ GET /work 200 in 15ms
+ GET /about 200 in 57ms
+ GET /about 200 in 38ms
+ GET /speaking 200 in 19ms
+ GET /credentials 200 in 85ms
+ GET /work 200 in 32ms
+ ✓ Compiled in 167ms (659 modules)
+ ✓ Compiled in 103ms (659 modules)
+ ✓ Compiled in 101ms (659 modules)
+ ✓ Compiled in 122ms (669 modules)
+ ✓ Compiled in 117ms (669 modules)
+ ✓ Compiled in 117ms (669 modules)
+ ✓ Compiled in 148ms (669 modules)
+ ✓ Compiled in 127ms (669 modules)
+ GET /work 200 in 93ms
+ GET /work 200 in 28ms
+ GET /work 200 in 21ms
+ ✓ Compiled in 364ms (659 modules)
+ ✓ Compiled in 127ms (659 modules)
+ GET /work 500 in 122ms
+ ✓ Compiled in 114ms (659 modules)
+ GET /work 200 in 118ms
+ GET /work 200 in 48ms
+ GET /work 200 in 20ms
+ ✓ Compiled in 143ms (669 modules)
+ GET /work 200 in 80ms
+ ✓ Compiled in 210ms (659 modules)
+ ✓ Compiled in 138ms (659 modules)
+ ✓ Compiled in 135ms (659 modules)
+ ✓ Compiled in 146ms (659 modules)
+ ✓ Compiled in 269ms (669 modules)
+ ✓ Compiled in 150ms (659 modules)
+ ✓ Compiled in 131ms (659 modules)
+ ✓ Compiled in 130ms (659 modules)
+ ✓ Compiled in 129ms (669 modules)
+ ✓ Compiled in 152ms (659 modules)
+ ✓ Compiled in 184ms (659 modules)
+ ✓ Compiled in 133ms (669 modules)
+ GET /work 200 in 96ms
+ ✓ Compiled /work/[slug] in 138ms (343 modules)
+ GET /work/beat-bots 200 in 73ms
+ GET /work 200 in 76ms
+ ✓ Compiled in 149ms (660 modules)
+ ✓ Compiled in 122ms (660 modules)
+ ✓ Compiled in 160ms (670 modules)
+ ✓ Compiled in 119ms (670 modules)
+ ✓ Compiled in 123ms (670 modules)
+ GET /work 200 in 81ms
+ GET /work 200 in 66ms
+ GET /work 200 in 49ms
+ GET /work/beat-bots 200 in 92ms
+ ✓ Compiled in 211ms (660 modules)
+ GET / 200 in 74ms
+ ✓ Compiled /credentials in 140ms (343 modules)
+ ✓ Compiled /contact in 182ms (375 modules)

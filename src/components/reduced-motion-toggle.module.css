@@ -1,0 +1,54 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 8px 12px;
+  border: var(--border-hairline);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--color-ink-muted);
+  transition: color var(--dur-fast) var(--ease-out-quart), border-color var(--dur-fast) var(--ease-out-quart);
+}
+
+.btn:hover { color: var(--color-ink); border-color: var(--color-line-strong); }
+
+.icon { display: inline-flex; }
+.iconOn { color: var(--color-electric-blue); }
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.state {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--color-ink);
+  margin-top: 4px;
+}
+
+.knob {
+  position: relative;
+  width: 32px;
+  height: 18px;
+  border-radius: 999px;
+  background: var(--color-silver-grey);
+  border: 1px solid var(--color-line-strong);
+  transition: background var(--dur-fast) var(--ease-out-quart);
+}
+
+.knobDot {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-ink);
+  transition: transform var(--dur-fast) var(--ease-out-quart), background var(--dur-fast) var(--ease-out-quart);
+}
+
+.knobOn { background: var(--color-electric-blue); border-color: var(--color-electric-blue); }
+.knobOn .knobDot { transform: translateX(14px); background: var(--color-warm-white); }

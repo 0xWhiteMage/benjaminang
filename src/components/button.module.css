@@ -1,0 +1,89 @@
+.btn {
+  --btn-bg: var(--color-electric-blue);
+  --btn-fg: var(--color-warm-white);
+  --btn-bd: var(--color-electric-blue);
+  --btn-bg-hover: #1F55E0;
+  --btn-fg-hover: var(--color-warm-white);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: 14px 20px;
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  border: 1px solid var(--btn-bd);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  font-weight: 500;
+  letter-spacing: 0.005em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background var(--dur-fast) var(--ease-out-quart),
+              color var(--dur-fast) var(--ease-out-quart),
+              border-color var(--dur-fast) var(--ease-out-quart),
+              transform var(--dur-fast) var(--ease-out-quart);
+  width: 100%;
+  text-align: left;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: var(--btn-bg-hover);
+  color: var(--btn-fg-hover);
+  border-color: var(--btn-bg-hover);
+}
+
+.btn:active { transform: translateY(1px); }
+
+.label {
+  display: inline-block;
+}
+
+.s_md { padding: 14px 20px; font-size: var(--fs-body); }
+.s_lg { padding: 18px 26px; font-size: var(--fs-body-lg); }
+.s_sm { padding: 10px 14px; font-size: var(--fs-body-sm); }
+
+/* Primary — accent (default) */
+.v_primary {
+  --btn-bg: var(--color-electric-blue);
+  --btn-fg: var(--color-warm-white);
+  --btn-bd: var(--color-electric-blue);
+  --btn-bg-hover: #1F55E0;
+}
+
+/* Secondary — surface 2 */
+.v_secondary {
+  --btn-bg: var(--color-surface-2);
+  --btn-fg: var(--color-ink);
+  --btn-bd: var(--color-line-strong);
+  --btn-bg-hover: var(--color-surface-1);
+}
+
+/* Ghost — text only */
+.v_ghost {
+  --btn-bg: transparent;
+  --btn-fg: var(--color-ink);
+  --btn-bd: transparent;
+  --btn-bg-hover: transparent;
+}
+.v_ghost:hover {
+  color: var(--color-amber);
+  background: transparent;
+}
+
+/* Outline — bordered accent on hover */
+.v_outline {
+  --btn-bg: transparent;
+  --btn-fg: var(--color-ink);
+  --btn-bd: var(--color-line-strong);
+  --btn-bg-hover: var(--color-electric-blue);
+  --btn-fg-hover: var(--color-warm-white);
+  --btn-bd-hover: var(--color-electric-blue);
+}
+.v_outline:hover {
+  border-color: var(--color-amber);
+  color: var(--color-amber);
+  background: transparent;
+}
