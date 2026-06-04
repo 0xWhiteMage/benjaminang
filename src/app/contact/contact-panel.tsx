@@ -6,6 +6,8 @@ import { site } from "@/lib/site";
 import styles from "./contact-panel.module.css";
 
 const PROJECT_TYPES = [
+  "Hiring / role opportunity",
+  "Advisory / consulting",
   "Brand film",
   "Campaign motion",
   "Motion design / idents",
@@ -155,9 +157,10 @@ export function ContactPanel() {
           </div>
 
           <ul className={styles.discList}>
-            <li>Creative direction</li>
-            <li>Motion design</li>
+            <li>Innovation</li>
             <li>Strategy</li>
+            <li>Design management</li>
+            <li>Education</li>
           </ul>
         </aside>
 

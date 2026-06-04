@@ -35,9 +35,10 @@ export default function CredentialsPage() {
             <br />&amp; Press<span className={styles.dot}>.</span>
           </h1>
           <p className={styles.lede}>
-            A selection of recognition, editorial features and industry mentions
-            that reflect the work, ideas and impact across motion design,
-            storytelling and creative direction.
+            A selection of recognition and editorial mentions across motion
+            design, creative direction, and building studios. Plus the work
+            I&apos;m doing now at the edge of creative technology, AI workflows,
+            and education.
           </p>
         </div>
       </header>
@@ -95,6 +96,17 @@ export default function CredentialsPage() {
             />
           </div>
         </div>
+      </section>
+
+      <section className={`container ${styles.hiringSummary}`} aria-labelledby="hiring-title">
+        <span className="eyebrow">Hiring summary</span>
+        <h2 id="hiring-title" className="sr-only">Hiring summary</h2>
+        <ul>
+          <li>10+ years leading creative direction and shipping campaigns</li>
+          <li>Founder experience. Teams, operations, budgets, growth</li>
+          <li>Education experience. Practice-led curriculum + mentoring</li>
+          <li>Current focus. Creative technology and human-centred AI workflows</li>
+        </ul>
       </section>
 
       <section className={`container ${styles.press}`} aria-labelledby="press-title">

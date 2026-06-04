@@ -1,46 +1,40 @@
 export type SpeakingTopic = {
-  index: string;
   title: string;
   description: string;
+  tag: string;
 };
 
 export const speakingTopics: SpeakingTopic[] = [
   {
-    index: "01",
-    title: "Strategy",
-    description:
-      "Business · Sales & Marketing · Positioning · Content · Outreach & Publicity",
+    title: "Creative entrepreneurship",
+    description: "Craft → company → reinvention",
+    tag: "Strategy"
   },
   {
-    index: "02",
-    title: "Business",
-    description:
-      "Stages · Productivity · Finances · Budgeting · Hiring and Firing",
+    title: "Narratives that ship",
+    description: "Creative direction for complex systems",
+    tag: "Creative"
   },
   {
-    index: "03",
-    title: "Communication",
-    description:
-      "Empathise · Empower · Enforce · Negotiate",
+    title: "Creative technology in practice",
+    description: "Prototypes, experiences, constraints",
+    tag: "Technology"
   },
   {
-    index: "04",
-    title: "Creative",
-    description:
-      "Problem-solving · Value-adding · Optimising",
+    title: "Human-centred AI workflows",
+    description: "Clarity, tone, adoption, accountability",
+    tag: "AI"
   },
   {
-    index: "05",
-    title: "Leadership",
-    description:
-      "Creative teams · Culture · Hiring · Feedback loops · Studio philosophy",
+    title: "Education for the next creative era",
+    description: "Practice-led, industry-real, AI-aware",
+    tag: "Education"
   },
   {
-    index: "06",
-    title: "AI in Creative",
-    description:
-      "Tools · Workflow · Human-in-the-loop · Master's thesis research",
-  },
+    title: "Community + launches",
+    description: "Participation loops and momentum — Web3 lessons that transfer",
+    tag: "Web3"
+  }
 ];
 
 export type Engagement = {
@@ -169,7 +163,7 @@ export const speakingPhotos: { src: string; alt: string; width: number; height: 
 
 export const testimonial = {
   quote:
-    "Benjamin brings clarity, energy, and real-world experience. His talks inspire our community to think bigger and create with intention.",
+    "Clear, energising, and specific. Benjamin connects craft, business, and emerging tools without the hype.",
   author: "Conference organiser",
   role: "Asia creative-industry circuit",
 };

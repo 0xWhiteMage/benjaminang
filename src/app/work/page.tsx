@@ -39,8 +39,7 @@ export default function WorkPage() {
             Work archive<span className={styles.dot}>.</span>
           </h1>
           <p className={styles.lede}>
-            A curated selection of projects across creative direction, motion design, ventures, and talks.
-            Switch between a grid and a constellation to see work across time.
+            Four pillars of my work. Building studios, shipping creative direction, exploring new tech, and teaching what I learn.
           </p>
         </div>
       </header>

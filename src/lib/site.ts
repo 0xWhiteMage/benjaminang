@@ -1,9 +1,9 @@
 export const site = {
   name: "Benjamin Ang",
   initials: "BA",
-  tagline: "Creative Director · Motion Designer · Singapore",
+  tagline: "Creative Entrepreneur · Creative Direction · Storytelling",
   description:
-    "Singapore-based Creative Director, Motion Designer and Creative Business Strategist. Director of brand films, motion campaigns and visual experiences for global brands. Founder of Genesis.",
+    "Creative entrepreneur working at the intersection of storytelling, creative direction, and emerging tools. 10+ years building studios and shipping campaigns. Now exploring creative technology, human-centred AI workflows, Web3, and education.",
   url: "https://benjaminang.tv",
   email: "hello@benjaminang.tv",
   location: "Singapore",

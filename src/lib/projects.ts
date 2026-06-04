@@ -44,7 +44,7 @@ export const projects: Project[] = [
     location: "Singapore",
     url: "https://genesismotiondesign.com",
     summary:
-      "An award-winning boutique motion design and animation studio I founded in 2015 with S$15,000 of my own savings — built to bridge the gap between Asian hustle and American playfulness.",
+      "Founded and grew a motion design studio from scratch to a 15-person team. Led creative direction for campaigns across brand film, motion design, and commercial production. Built the culture, the pipeline, and the client base.",
     challenge:
       "Having worked in both Singapore and Los Angeles, I noticed a real disparity in approach and culture between the two motion design scenes. I started Genesis to bridge that gap — and was repeatedly told it was impossible under local norms of overworking, over-competitiveness, and rigid hierarchy. That resistance is still the motivation.",
     approach:
@@ -110,7 +110,7 @@ export const projects: Project[] = [
     location: "Vietnam & Singapore",
     url: "https://balancestudio.tv",
     summary:
-      "An award-winning boutique video production agency I co-founded in 2018, operating across Vietnam and Singapore — partnering with agencies and brands on brand films, post-production, and Hybrid AI workflows.",
+      "A creative studio built on structure and workflows. Focused on production systems, team operations, and delivering creative direction at scale. Not a side project — a deliberate build.",
     challenge:
       "Building a production house that could credibly serve regional and global brands across two very different markets — Vietnamese production culture and Singaporean client expectations — without compromising craft or pace in either.",
     approach:
@@ -186,7 +186,7 @@ export const projects: Project[] = [
     status: "tbd",
     location: "Singapore",
     summary:
-      "An education initiative for creative freelancers and entrepreneurs — codifying the operating playbook from a decade of running Genesis and Balance. Details to be announced.",
+      "Adjunct lecturer at Nanyang Polytechnic since 2022. Teaching practice-led curriculum in motion design, creative entrepreneurship, and industry-real skills. Bridging education and the creative industry.",
     challenge: "Coming soon.",
     approach: "Coming soon.",
     outcome: [
@@ -218,7 +218,7 @@ export const projects: Project[] = [
     location: "Singapore",
     url: "https://genesismotiondesign.com/case-studies/beat-bots/",
     summary:
-      "A family-friendly Web3 brand with a 90s-nostalgia avatar IP — co-founded in 2023. Built and scaled the community engine from 0 to 150K+ X (Twitter) followers in 4 months, with a 15–20K-member Discord, through phased, milestone-driven campaigns.",
+      "A Web3 IP experiment where I owned strategy, brand, and go-to-market. The work wasn't 'content' in isolation. It was narrative, cadence, community systems, and iteration under real-time feedback.",
     challenge:
       "After a decade of motion design work, I wanted to ship something of my own — a brand, not a service. The thesis: a family-friendly, 90s-nostalgia avatar world that paired 3D character design with utility, community, and a long-term roadmap. The bet was that community and trust, not just content, would carry the brand through a brutal market.",
     approach:

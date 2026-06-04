@@ -69,7 +69,7 @@ const milestones = [
   {
     index: "06",
     year: "2018",
-    title: "Founded Balance",
+    title: "Founded Balance Creative — production structure + workflows",
     detail:
       "Founded Balance Creative, an award-winning boutique video production agency operating across Ho Chi Minh City, Vietnam and Singapore.",
     kind: "Venture",
@@ -97,42 +97,32 @@ const milestones = [
   {
     index: "09",
     year: "Today",
-    title: "Creative Director / Motion Designer / Business Strategist",
+    title: "Creative entrepreneur — AI workflows + education",
     detail:
-      "Helping brands and teams move people and performance through clarity, motion, and impact. Studio philosophy: Make It Better. Forbes 30 Under 30 Asia, Class of 2020.",
+      "Exploring creative technology, human-centred AI workflows, Web3, and education while leading creative direction.",
     kind: "Today",
     expanded: false,
   },
 ];
 
 const disciplines = [
-  ["01", "Business Management"],
-  ["02", "Brand Positioning & Marketing Strategy"],
-  ["03", "Outreach & Publicity"],
-  ["04", "Sales & Business Development"],
-  ["05", "Finance & Budgeting"],
-  ["06", "Human Resource Management"],
-  ["07", "Project Management"],
-  ["08", "Creative Direction"],
-  ["09", "Art Direction"],
-  ["10", "Motion Graphics"],
-  ["11", "Graphic Design"],
-  ["12", "2D & 3D Animation"],
-  ["13", "AR / VR Experience"],
-  ["14", "Video Production"],
-  ["15", "Sound Engineering"],
+  "Narrative & Strategy",
+  "Creative Direction",
+  "Delivery & Stakeholders",
+  "Creative Technology & AI Workflows",
+  "Education"
 ];
 
 const story = [
-  "Born and raised in Singapore, Benjamin Ang begun his career as a motion designer. Graduated from Nanyang Polytechnic with a diploma in Motion Graphics and Broadcast Design in 2012, and decided to not further pursue his education.",
-  "After graduation, he took a 3-month internship at an amazing company in Los Angeles, California, called Blind. Having worked in both Singapore and Los Angeles, he noticed a disparity of approaching work and the importance of culture, between the two motion design industries.",
-  "He started Genesis in 2015 at age 24, with S$15,000 of his own savings, to bridge the gap by infusing a positive blend of both cultures — the Asian hustle and the open playfulness of the other. Repeatedly told impossible due to the local social norms of overworking, over-competitiveness and hierarchies, which till this day, is his motivation to prove others wrong and that a balance is still possible if entrepreneurs embrace the persistence to try.",
-  "Studio philosophy: Make It Better. Ego down, open-minded, push the work, support each other. He grew Genesis to a 15-person team, bootstrapped, with SGD 5M+ in revenue — recognised by Forbes 30 Under 30 Asia (2020), the Webby Awards, the W3 Awards (Best of Show), and a long list of industry publications. He co-founded Balance Studio in 2019, a Vietnam and Singapore–based production house for brand films, post-production and Hybrid AI.",
-  "Today, he's an Adjunct Lecturer at Nanyang Polytechnic (School of Design & Media, 2022–present), working through a part-time Master of Arts in Digital Management at Hyper Island (UK, Class of 2026), and still shipping — currently exploring AI-powered client-communication agents as a master's thesis topic at the intersection of human-centred design and creative services.",
+  "I started in motion design because I loved the craft. The idea that you could make people feel something through movement, timing, and visual rhythm — that hooked me.",
+  "Then I built studios. Genesis Motion Design grew from a one-person operation to a 15-person team. We shipped campaigns for brands across Asia. I learned how to lead creative direction, manage production, and build cultures that deliver.",
+  "Balance Creative came next. A deliberate build — focused on production structure, workflows, and the systems that make creative work repeatable. Not just making things look good. Making things work.",
+  "Along the way, I started teaching at Nanyang Polytechnic. Practice-led curriculum. Industry-real. AI-aware. I wanted to give students what I wish I had when I started.",
+  "Now I'm exploring creative technology, human-centred AI workflows, and Web3. Not as buzzwords. As tools that change how we tell stories, build teams, and ship work."
 ];
 
 const pullquote = {
-  text: "I wanted to put Singapore's design and art scene at the forefront of the APAC region.",
+  text: "I build stories, teams, and experiments. The foundation is creative direction. The curiosity is what's next.",
   cite: "Benjamin Ang",
 };
 
@@ -147,22 +137,25 @@ export default function AboutPage() {
           <h1 className={styles.title}>
             Designer &amp; animator by training.
             <br />
-            Creative business strategist through experience<span className={styles.dot}>.</span>
+            Creative entrepreneur by choice<span className={styles.dot}>.</span>
           </h1>
           <p className={styles.lede}>
-            I bridge design, motion, and strategy to create work that connects—moving people
-            and driving results for brands and teams.
+            I build stories, teams, and experiments. My foundation is creative direction and storytelling. My current curiosity lives in creative technology, human-centred AI workflows, Web3, and education.
           </p>
           <ul className={styles.tags}>
             <li>Singapore-based</li>
             <li aria-hidden>·</li>
-            <li>Born 1991</li>
+            <li>Creative direction</li>
             <li aria-hidden>·</li>
-            <li>Creative Director</li>
+            <li>Strategy</li>
             <li aria-hidden>·</li>
-            <li>Motion Designer</li>
+            <li>Creative technology</li>
             <li aria-hidden>·</li>
-            <li>Business Strategist</li>
+            <li>Education</li>
+            <li aria-hidden>·</li>
+            <li>Founder (Genesis Motion Design, Balance)</li>
+            <li aria-hidden>·</li>
+            <li>Adjunct Lecturer (NYP)</li>
           </ul>
         </div>
       </header>
@@ -174,7 +167,7 @@ export default function AboutPage() {
           <div className={styles.storyLabel}>
             <span className={styles.storyLabelText}>01 / The story</span>
             <h2 id="story-title" className={styles.storyHeading}>
-              From Singapore to Los Angeles, and back — to build.
+              From craft to company to what's next.
             </h2>
           </div>
           <div className={styles.storyBody}>
@@ -197,7 +190,7 @@ export default function AboutPage() {
         <div className={styles.discIntro}>
           <span className="eyebrow">Experience &amp; disciplines</span>
           <h2 id="disc-title" className={styles.discTitle}>
-            A multidisciplinary foundation that enables me to lead holistically — from strategy to execution.
+            Five pillars. From narrative to technology to education.
           </h2>
           <a href="/credentials" className={styles.discLink}>
             See credentials &amp; press
@@ -208,9 +201,9 @@ export default function AboutPage() {
           </a>
         </div>
         <ul className={styles.discGrid}>
-          {disciplines.map(([i, t]) => (
+          {disciplines.map((t, i) => (
             <li key={i} className={styles.discItem} data-reveal>
-              <span className={`${styles.discNum} mono`}>{i}</span>
+              <span className={`${styles.discNum} mono`}>{String(i + 1).padStart(2, "0")}</span>
               <span className={styles.discName}>{t}</span>
               <span className={styles.discDot} aria-hidden />
             </li>

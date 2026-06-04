@@ -31,10 +31,11 @@ export default function ContactPage() {
             <br /> something meaningful<span className={styles.dot}>.</span>
           </h1>
           <p className={styles.lede}>
-            I partner with brands, teams, and organisations to turn complex
-            ideas into clear narratives and compelling motion experiences.
-            Best for project enquiries, speaking invitations,
-            and strategic collaborations.
+            I'm open to conversations across innovation, strategy planning,
+            design management, and education. I also take on selected creative
+            direction and advisory work. If you're hiring, building an innovation
+            function, or shaping how teams adopt new tools, I'd love to hear what
+            you're working on.
           </p>
         </div>
       </header>

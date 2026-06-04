@@ -99,11 +99,11 @@ export default function SpeakingPage() {
               Speaking
               <br />&amp; Talks<span className={styles.dot}>.</span>
             </h1>
-            <p className={styles.kicker}>Creative Business.</p>
+            <p className={styles.kicker}></p>
             <p className={styles.lede}>
-              Empowering creative freelancers &amp; entrepreneurs by sharing the journey
-              of a young creative entrepreneur, and the valuable lessons learnt through
-              the celebrations and the downfalls.
+              I speak about creative entrepreneurship, storytelling systems, and emerging tools.
+              From the perspective of someone who built studios, shipped campaigns, and now teaches
+              while exploring what&apos;s next.
             </p>
             <div className={styles.ctas}>
               <ButtonLink href="/contact">Invite {site.name.split(" ")[0]} to speak</ButtonLink>
@@ -146,9 +146,9 @@ export default function SpeakingPage() {
         </div>
         <h2 id="topics-title" className="sr-only">Speaking topics</h2>
         <ol className={styles.topicList}>
-          {speakingTopics.map((t) => (
-            <li key={t.index} className={styles.topicItem} data-reveal>
-              <span className={`${styles.topicNum} mono`}>{t.index}</span>
+          {speakingTopics.map((t, i) => (
+            <li key={t.title} className={styles.topicItem} data-reveal>
+              <span className={`${styles.topicNum} mono`}>{t.tag}</span>
               <div>
                 <h3>{t.title}</h3>
                 <p>{t.description}</p>

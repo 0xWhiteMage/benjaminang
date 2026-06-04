@@ -47,16 +47,14 @@ export default function HomePage() {
         <div className={`container ${styles.heroInner}`}>
           <div className={styles.heroCopy}>
             <span className={`eyebrow ${styles.eyebrow}`}>
-              <span className="accent-dot" aria-hidden /> Creative direction &amp; motion design
+              <span className="accent-dot" aria-hidden /> Creative direction &amp; creative entrepreneurship
             </span>
             <h1 id="hero-title" className={styles.heroTitle}>
-              Ideas that move <em>people</em>
-              <br /> and <em>performance</em><span className={styles.dot}>.</span>
+              Ideas that move <em>people</em><span className={styles.dot}>.</span>
+              <br /> And <em>systems</em><span className={styles.dot}>.</span>
             </h1>
             <p className={styles.heroLede}>
-              I'm {site.name}, a Singapore-based {site.tagline.replace("·", "/")}.
-              I partner with brands and teams to turn complex ideas into clear narratives and
-              compelling motion experiences.
+              Creative entrepreneur working at the intersection of storytelling, creative direction, and emerging tools. 10+ years building studios and shipping campaigns. Now exploring creative technology, human-centred AI workflows, Web3, and education.
             </p>
             <div className={styles.heroCtas}>
               <ButtonLink href="/work" variant="primary">View selected work</ButtonLink>
@@ -67,7 +65,7 @@ export default function HomePage() {
               <span aria-hidden>·</span>
               <span className="mono">SG · 02° 01′ N</span>
               <span aria-hidden>·</span>
-              <span className="mono">2024</span>
+              <span className="mono">2026</span>
             </div>
           </div>
 
@@ -188,8 +186,8 @@ export default function HomePage() {
         <div className="container">
           <SectionHeading
             eyebrow={<><span className="accent-dot" aria-hidden /> 03 · Capabilities</>}
-            title={<span id="services-title">End-to-end creative direction.</span>}
-            description="From positioning to delivery — a small, deliberate practice that ships."
+            title={<span id="services-title">Creative direction, plus the edge of what's next.</span>}
+            description="Story, systems, and experiments. Spanning campaigns, motion, emerging tech, and education."
           />
           <ul className={styles.serviceList}>
             {[
@@ -198,7 +196,7 @@ export default function HomePage() {
               ["03", "Brand Film", "Long-form story, manifesto, hero launch."],
               ["04", "Strategy", "Positioning, naming, narrative, rollout."],
               ["05", "Speaking", "Keynotes, panels, workshops, judging."],
-              ["06", "Genesis & Balance", "Founder — building a sustainable creative business."],
+              ["06", "Building Studios", "Founder — building a sustainable creative business."],
             ].map(([i, t, d]) => (
               <li key={i} className={styles.serviceItem} data-reveal>
                 <span className="mono">{i}</span>
@@ -217,11 +215,10 @@ export default function HomePage() {
             <div>
               <span className="eyebrow">04 · Contact</span>
               <h2 id="cta-title" className={styles.ctaTitle}>
-                Let's make something <em>meaningful</em><span className={styles.dot}>.</span>
+                Open to innovation, strategy planning, design management, and education roles.
               </h2>
               <p className={styles.ctaDesc}>
-                Best for project enquiries, speaking invitations, and strategic collaborations.
-                Typically responds within 1–2 business days.
+                For hiring conversations, advisory work, speaking invitations, and creative direction projects.
               </p>
             </div>
             <div className={styles.ctaActions}>
