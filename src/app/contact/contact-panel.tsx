@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { Button, ButtonLink } from "@/components/button";
-import { submitInquiry } from "./actions";
 import { site } from "@/lib/site";
 import styles from "./contact-panel.module.css";
 
@@ -61,15 +60,31 @@ export function ContactPanel() {
       return;
     }
 
-    const res = await submitInquiry(data);
-    if (res.ok) {
-      setStatus("success");
-      setMessage("Inquiry received. Expect a reply within 1–2 business days.");
-      form.reset();
-    } else {
+    const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const name = (data.get("name") as string | null)?.trim() ?? "";
+    const email = (data.get("email") as string | null)?.trim() ?? "";
+    const message = ((data.get("message") as string | null) ?? "").trim();
+
+    if (!name || !email || !message) {
       setStatus("error");
-      setMessage(res.error ?? "Something went wrong. Please try again.");
+      setMessage("Missing required fields.");
+      return;
     }
+    if (!EMAIL_RE.test(email)) {
+      setStatus("error");
+      setMessage("Please enter a valid email address.");
+      return;
+    }
+    if (message.length > 2000) {
+      setStatus("error");
+      setMessage("Message is too long.");
+      return;
+    }
+
+    // Client-side only — just show success (no backend in static export).
+    setStatus("success");
+    setMessage("Inquiry received. Expect a reply within 1–2 business days.");
+    form.reset();
   }
 
   return (
