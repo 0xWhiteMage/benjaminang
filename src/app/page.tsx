@@ -29,6 +29,21 @@ export default function HomePage() {
       {/* ============== HERO ============== */}
       <section className={styles.hero} aria-labelledby="hero-title">
         <div className={`container ${styles.heroInner}`}>
+          {/* Timecode HUD — top right, within grid */}
+          <div className={styles.timecodeHud} aria-hidden>
+            <div className={styles.timecodeLine}>
+              <span>00:12:08:16</span>
+            </div>
+            <div className={styles.timecodeMeta}>
+              <span>1920 × 1080</span>
+              <span>24FPS</span>
+            </div>
+            <div className={styles.timecodeStatus}>
+              <span className={styles.statusDot} />
+              <span>STATUS: ONLINE</span>
+            </div>
+          </div>
+
           <div className={styles.heroCopy}>
             <div>
               <h1 id="hero-title" className={styles.heroTitle}>
@@ -69,21 +84,6 @@ export default function HomePage() {
               className={styles.heroImage}
               priority
             />
-          </div>
-        </div>
-
-        {/* Timecode HUD — top right */}
-        <div className={styles.timecodeHud} aria-hidden>
-          <div className={styles.timecodeLine}>
-            <span>00:12:08:16</span>
-          </div>
-          <div className={styles.timecodeMeta}>
-            <span>1920 × 1080</span>
-            <span>24FPS</span>
-          </div>
-          <div className={styles.timecodeStatus}>
-            <span className={styles.statusDot} />
-            <span>STATUS: ONLINE</span>
           </div>
         </div>
 

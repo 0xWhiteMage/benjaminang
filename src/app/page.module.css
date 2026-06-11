@@ -10,6 +10,7 @@
 }
 
 .heroInner {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-6);
@@ -123,8 +124,8 @@
 /* --- Timecode HUD (top right) --- */
 .timecodeHud {
   position: absolute;
-  top: var(--space-7);
-  right: var(--container-pad);
+  top: var(--space-9);
+  right: 0;
   display: none;
   flex-direction: column;
   align-items: flex-end;

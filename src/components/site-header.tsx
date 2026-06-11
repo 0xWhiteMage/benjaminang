@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { site } from "@/lib/site";
-import { LiveTimecode } from "@/components/live-timecode";
 import styles from "./site-header.module.css";
 
 const NAV = [
@@ -48,16 +47,6 @@ export function SiteHeader() {
             ))}
           </ul>
         </nav>
-
-        <div className={styles.meta} aria-label="System metadata">
-          <LiveTimecode className={styles.timecode} format="smpte" />
-          <span className={styles.metaSep} aria-hidden>·</span>
-          <span className="mono">1920 × 1080</span>
-          <span className={styles.metaSep} aria-hidden>·</span>
-          <span className="mono">24FPS</span>
-          <span className={styles.metaSep} aria-hidden>·</span>
-          <span className="mono">1.00x</span>
-        </div>
 
         <button
           type="button"
