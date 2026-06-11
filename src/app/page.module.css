@@ -176,12 +176,13 @@
   display: none;
   align-items: center;
   gap: var(--space-6);
-  padding: var(--space-4) var(--container-pad);
+  padding: var(--space-4) 0;
   border-top: var(--border-hairline);
   font-family: var(--font-mono);
   font-size: 0.6875rem;
   letter-spacing: var(--tracking-mono);
   color: var(--color-ink-quiet);
+  grid-column: 1 / -1;
 }
 
 @media (min-width: 768px) {

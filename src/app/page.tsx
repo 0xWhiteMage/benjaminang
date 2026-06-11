@@ -74,10 +74,9 @@ export default function HomePage() {
               priority
             />
           </div>
-        </div>
 
-        {/* Bottom telemetry bar */}
-        <div className={styles.heroTelemetry} aria-hidden>
+          {/* Bottom telemetry bar — inside container */}
+          <div className={styles.heroTelemetry} aria-hidden>
           <div className={styles.telemetryLeft}>
             <span className={styles.telemetryLabel}>KEYFRAMES</span>
             <div className={styles.keyframeDots}>
@@ -105,6 +104,7 @@ export default function HomePage() {
           </div>
           <div className={styles.telemetryScroll}>
             <span>SCROLL ↓</span>
+          </div>
           </div>
         </div>
       </section>
