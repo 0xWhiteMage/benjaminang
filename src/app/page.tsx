@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ButtonLink } from "@/components/button";
-import { SectionHeading } from "@/components/section-heading";
+import Image from "next/image";
 import { site } from "@/lib/site";
 import styles from "./page.module.css";
 
@@ -19,29 +18,6 @@ const breadcrumbLd = {
   ],
 };
 
-const ventures = [
-  {
-    title: "Genesis Motion Design",
-    description: "Award-winning boutique motion & animation studio, Singapore. Est. 2015.",
-    href: "/work#genesis-motion-design",
-  },
-  {
-    title: "Balance Creative / Balance Studio",
-    description: "Boutique video production across Vietnam & Singapore.",
-    href: "/work#balance-creative",
-  },
-  {
-    title: "Creative Business Education",
-    description: "Teaching creatives, freelancers and founders to build a business around their craft.",
-    href: "/work#education",
-  },
-  {
-    title: "Creative Technology & AI",
-    description: "Current explorations: AI agents, creative automation, human-centred tools.",
-    href: "/work#creative-technology",
-  },
-];
-
 export default function HomePage() {
   return (
     <>
@@ -54,100 +30,151 @@ export default function HomePage() {
       <section className={styles.hero} aria-labelledby="hero-title">
         <div className={`container ${styles.heroInner}`}>
           <div className={styles.heroCopy}>
-            <h1 id="hero-title" className={styles.heroTitle}>
-              Benjamin Ang
-            </h1>
+            <div>
+              <h1 id="hero-title" className={styles.heroTitle}>
+                Benjamin Ang
+              </h1>
+              <span className={styles.heroAccent} aria-hidden />
+            </div>
             <p className={styles.heroTagline}>
               Technology should adapt to people — not the other way around.
             </p>
             <p className={styles.heroLede}>
-              Singapore-based. I make companies, films, products and ideas to understand complex systems — and bring out the best in them. Designer &amp; animator by training; creative business strategist through experience.
+              I make companies, films, products and ideas to understand complex
+              systems — and bring out the best in them.
             </p>
-            <div className={styles.heroProof}>
-              <span>Forbes 30 Under 30 Asia (2020)</span>
-              <span aria-hidden>·</span>
-              <span>Founder, Genesis Motion Design</span>
-              <span aria-hidden>·</span>
-              <span>10+ years</span>
-              <span aria-hidden>·</span>
-              <span>Speaker across Asia</span>
+            <div className={styles.heroCtas}>
+              <Link href="/work" className={styles.ctaLink}>
+                VIEW SELECTED WORK
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                  <line x1="4" y1="12" x2="20" y2="12" />
+                  <polyline points="14 6 20 12 14 18" />
+                </svg>
+              </Link>
+              <Link href="#manifesto" className={styles.ctaLink}>
+                READ MANIFESTO
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                  <line x1="4" y1="12" x2="20" y2="12" />
+                  <polyline points="14 6 20 12 14 18" />
+                </svg>
+              </Link>
             </div>
+          </div>
+
+          <div className={styles.heroMedia}>
+            <Image
+              src="/about/hero.webp"
+              alt="Cinematic abstract architectural form"
+              fill
+              className={styles.heroImage}
+              priority
+            />
+          </div>
+        </div>
+
+        {/* Timecode HUD — top right */}
+        <div className={styles.timecodeHud} aria-hidden>
+          <div className={styles.timecodeLine}>
+            <span>00:12:08:16</span>
+          </div>
+          <div className={styles.timecodeMeta}>
+            <span>1920 × 1080</span>
+            <span>24FPS</span>
+          </div>
+          <div className={styles.timecodeStatus}>
+            <span className={styles.statusDot} />
+            <span>STATUS: ONLINE</span>
+          </div>
+        </div>
+
+        {/* Bottom telemetry bar */}
+        <div className={styles.heroTelemetry} aria-hidden>
+          <div className={styles.telemetryLeft}>
+            <span className={styles.telemetryLabel}>KEYFRAMES</span>
+            <div className={styles.keyframeDots}>
+              <span className={`${styles.kfDot} ${styles.kfDotActive}`} />
+              <span className={styles.kfDot} />
+              <span className={styles.kfDot} />
+              <span className={styles.kfDot} />
+              <span className={styles.kfDot} />
+              <span className={styles.kfDot} />
+            </div>
+          </div>
+          <div className={styles.telemetryCenter}>
+            <span className={styles.telemetryLabel}>FRAME COUNTER</span>
+            <span className={styles.telemetryValue}>110 / 240</span>
+          </div>
+          <div className={styles.telemetryCenter}>
+            <span className={styles.telemetryLabel}>TIMECODE</span>
+            <span className={styles.telemetryValue}>00:12:08</span>
+          </div>
+          <div className={styles.telemetryRight}>
+            <span className={styles.telemetryLabel}>RENDER PROGRESS</span>
+            <div className={styles.progressBar}>
+              <div className={styles.progressFill} style={{ width: "78%" }} />
+            </div>
+          </div>
+          <div className={styles.telemetryScroll}>
+            <span>SCROLL ↓</span>
           </div>
         </div>
       </section>
 
       {/* ============== MANIFESTO ============== */}
-      <section className={`section ${styles.manifesto}`} aria-labelledby="manifesto-title">
+      <section id="manifesto" className={`section ${styles.manifesto}`} aria-labelledby="manifesto-heading">
         <div className="container">
-          <div className={styles.manifestoInner}>
-            <h2 id="manifesto-title" className="sr-only">Manifesto</h2>
-            <p className={styles.manifestoLead}>
+          <div className={styles.manifestoHeader}>
+            <span className={styles.manifestoEyebrow}>01 · MANIFESTO</span>
+            <h2 id="manifesto-heading" className={styles.manifestoTitle}>
               Technology should adapt to people — not the other way around.
-            </p>
-            <p>
-              That belief sits underneath everything I make. Companies, films, products, classrooms, AI agents, tools that didn't exist the morning before — the making was never really the point. It was how I think.
-            </p>
-            <p>
-              What pulls me is the seam where people meet the systems they're asked to live inside and trust: where creativity meets technology, art meets business, humans meet machines. Most of that seam feels colder and more confusing than it needs to be.
-            </p>
-            <p>
-              For years the word was motion designer — true, until it wasn't enough. The work kept widening until no single title held it. What held it instead was a question, and I don't think it has a final answer: how do you understand a complex system, and bring out the best in it?
-            </p>
-            <p>
-              Everything else — the medium, the title, the tools — is just how I go looking.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ============== SELECTED WORK ============== */}
-      <section className={`section ${styles.selected}`} aria-labelledby="selected-title">
-        <div className="container">
-          <SectionHeading
-            level={2}
-            eyebrow={<><span className="accent-dot" aria-hidden /> Selected work</>}
-            title={<span id="selected-title">Ventures &amp; work.</span>}
-            description="The motion, films, companies and experiments that make up an ongoing body of work."
-          />
-
-          <div className={styles.venturesGrid}>
-            {ventures.map((v) => (
-              <Link key={v.title} href={v.href} className={styles.ventureCard} data-reveal>
-                <h3 className={styles.ventureTitle}>{v.title}</h3>
-                <p className={styles.ventureDesc}>{v.description}</p>
-                <span className={styles.ventureLink}>
-                  View
-                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-                    <line x1="4" y1="12" x2="20" y2="12" />
-                    <polyline points="14 6 20 12 14 18" />
-                  </svg>
-                </span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ============== SPEAKING TEASER ============== */}
-      <section className={`section ${styles.speaking}`} aria-labelledby="speaking-title">
-        <div className="container">
-          <div className={styles.speakingInner}>
-            <p id="speaking-title" className={styles.speakingText}>
-              From keyframes to cap tables to AI agents — talks on building creative work, and businesses, that last.
-            </p>
-            <ButtonLink href="/speaking" variant="ghost">View speaking</ButtonLink>
-          </div>
-        </div>
-      </section>
-
-      {/* ============== CONTACT CTA ============== */}
-      <section className={styles.ctaStrip} aria-labelledby="cta-title">
-        <div className="container">
-          <div className={styles.ctaInner}>
-            <h2 id="cta-title" className={styles.ctaTitle}>
-              Working on something ambitious at the edges?
             </h2>
-            <ButtonLink href="/contact" variant="primary">Start a conversation</ButtonLink>
+          </div>
+
+          <div className={styles.manifestoColumns}>
+            <p className={styles.manifestoCol}>
+              I believe the best technology disappears into the background. It
+              helps people think more clearly, collaborate more effectively, and
+              focus on what matters.
+            </p>
+            <p className={styles.manifestoCol}>
+              Making things has always been my way of understanding the world.
+              Whether building films, products, businesses, or teams, the process
+              is the same: observe carefully, understand the system, and improve
+              what already exists.
+            </p>
+            <p className={styles.manifestoCol}>
+              Creativity and technology are not the destination. They are tools
+              for creating clarity, connection, and meaningful change.
+            </p>
+            <p className={styles.manifestoCol}>
+              The throughline in everything I do is simple: understand complex
+              systems — and bring out the best in them.
+            </p>
+          </div>
+
+          {/* Bottom telemetry bar */}
+          <div className={styles.manifestoTelemetry} aria-hidden>
+            <div className={styles.telemetryLeft}>
+              <span className={styles.telemetryLabel}>KEYFRAME 03</span>
+              <div className={styles.keyframeDots}>
+                <span className={styles.kfDot} />
+                <span className={styles.kfDot} />
+                <span className={`${styles.kfDot} ${styles.kfDotActive}`} />
+                <span className={styles.kfDot} />
+                <span className={styles.kfDot} />
+                <span className={styles.kfDot} />
+              </div>
+            </div>
+            <div className={styles.telemetryCenter}>
+              <span className={styles.telemetryLabel}>FRAME</span>
+              <span className={styles.telemetryValue}>110 / 240</span>
+            </div>
+            <div className={styles.telemetryRight}>
+              <span className={styles.telemetryLabel}>RENDER STATUS</span>
+              <div className={styles.progressBar}>
+                <div className={styles.progressFill} style={{ width: "78%" }} />
+              </div>
+            </div>
           </div>
         </div>
       </section>
