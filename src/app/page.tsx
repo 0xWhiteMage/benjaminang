@@ -29,6 +29,18 @@ export default function HomePage() {
 
       {/* ============== HERO ============== */}
       <section className={styles.hero} aria-labelledby="hero-title">
+        {/* Full-bleed background image */}
+        <div className={styles.heroMedia}>
+          <Image
+            src="/about/hero.webp"
+            alt="Cinematic abstract architectural form"
+            fill
+            className={styles.heroImage}
+            priority
+          />
+          <div className={styles.heroMediaOverlay} aria-hidden />
+        </div>
+
         <div className={`container ${styles.heroInner}`}>
           {/* Timecode HUD — top right, within grid */}
           <TimecodeHud />
@@ -41,7 +53,9 @@ export default function HomePage() {
               <span className={styles.heroAccent} aria-hidden />
             </div>
             <p className={styles.heroTagline}>
-              Technology should adapt to people — not the other way around.
+              Technology should adapt to people;
+              <br />
+              not the other way around.
             </p>
             <p className={styles.heroLede}>
               I make companies, films, products and ideas to understand complex
@@ -63,16 +77,6 @@ export default function HomePage() {
                 </svg>
               </Link>
             </div>
-          </div>
-
-          <div className={styles.heroMedia}>
-            <Image
-              src="/about/hero.webp"
-              alt="Cinematic abstract architectural form"
-              fill
-              className={styles.heroImage}
-              priority
-            />
           </div>
 
           {/* Bottom telemetry bar — inside container */}
@@ -115,7 +119,9 @@ export default function HomePage() {
           <div className={styles.manifestoHeader}>
             <span className={styles.manifestoEyebrow}>01 · MANIFESTO</span>
             <h2 id="manifesto-heading" className={styles.manifestoTitle}>
-              Technology should adapt to people — not the other way around.
+              Technology should adapt to people;
+              <br />
+              not the other way around.
             </h2>
           </div>
 

@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  basePath: '/benjaminang',
   reactStrictMode: true,
   poweredByHeader: false,
   compress: true,
+  output: 'export',
+  basePath: '/benjaminang',
   images: {
     formats: ['image/avif', 'image/webp'],
     dangerouslyAllowSVG: true,

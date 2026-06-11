@@ -1,7 +1,8 @@
 /* ============== HERO ============== */
 .hero {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   background: var(--color-off-black);
@@ -10,34 +11,47 @@
 }
 
 .heroInner {
-  position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-6);
-  align-items: center;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "copy"
+    "telemetry";
+  gap: var(--space-7);
+  align-items: start;
   flex: 1;
-  padding-top: var(--space-9);
-  padding-bottom: var(--space-8);
+  padding-top: calc(var(--header-h) + var(--space-6));
+  padding-bottom: var(--space-6);
 }
 
 @media (min-width: 1024px) {
   .heroInner {
     grid-template-columns: 1fr 1fr;
-    gap: var(--space-7);
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "copy hud"
+      "copy telemetry";
+    gap: var(--space-8);
+    padding-top: calc(var(--header-h) + var(--space-8));
+    padding-bottom: var(--space-8);
+    align-items: center;
   }
 }
 
 /* --- Left copy --- */
 .heroCopy {
   display: grid;
-  gap: var(--space-4);
+  gap: var(--space-5);
+  grid-area: copy;
+  position: relative;
+  z-index: 1;
 }
 
 .heroTitle {
   font-family: var(--font-display);
-  font-size: clamp(3.2rem, 8vw, 6.4rem);
-  line-height: 1;
-  letter-spacing: -0.02em;
+  font-size: clamp(3.6rem, 8vw, 7.2rem);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
   font-weight: 400;
   margin: 0;
   color: var(--color-ink);
@@ -45,16 +59,16 @@
 
 .heroAccent {
   display: block;
-  width: 40px;
+  width: 48px;
   height: 3px;
   background: var(--color-electric-blue);
-  margin-top: var(--space-3);
+  margin-top: var(--space-4);
   border-radius: 2px;
 }
 
 .heroTagline {
   font-family: var(--font-display);
-  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-size: clamp(1.15rem, 2vw, 1.6rem);
   line-height: 1.3;
   color: var(--color-ink);
   font-style: italic;
@@ -67,14 +81,14 @@
   color: var(--color-ink-muted);
   max-width: 48ch;
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .heroCtas {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-4);
-  margin-top: var(--space-3);
+  gap: var(--space-5);
+  margin-top: var(--space-4);
 }
 
 .ctaLink {
@@ -102,30 +116,44 @@
   transform: translateX(3px);
 }
 
-/* --- Right media --- */
+/* --- Right media (full-bleed background) --- */
 .heroMedia {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  border-radius: var(--radius-md);
-  overflow: hidden;
-}
-
-@media (min-width: 1024px) {
-  .heroMedia {
-    aspect-ratio: 4 / 3;
-  }
+  position: absolute;
+  inset: 0;
+  z-index: 0;
 }
 
 .heroImage {
   object-fit: cover;
+  object-position: center 10%;
+  width: 100%;
+  height: 100%;
+}
+
+.heroMediaOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    var(--color-off-black) 0%,
+    var(--color-off-black) 40%,
+    transparent 100%
+  );
+}
+
+@media (min-width: 1024px) {
+  .heroMediaOverlay {
+    background: linear-gradient(
+      to right,
+      var(--color-off-black) 0%,
+      var(--color-off-black) 35%,
+      transparent 75%
+    );
+  }
 }
 
 /* --- Timecode HUD (top right) --- */
 .timecodeHud {
-  position: absolute;
-  top: var(--space-9);
-  right: 0;
   display: none;
   flex-direction: column;
   align-items: flex-end;
@@ -135,6 +163,12 @@
   letter-spacing: var(--tracking-mono);
   color: var(--color-ink-quiet);
   text-align: right;
+  grid-area: hud;
+  align-self: start;
+  justify-self: end;
+  position: relative;
+  z-index: 1;
+  margin-top: -100px;
 }
 
 @media (min-width: 1024px) {
@@ -182,7 +216,11 @@
   font-size: 0.6875rem;
   letter-spacing: var(--tracking-mono);
   color: var(--color-ink-quiet);
-  grid-column: 1 / -1;
+  grid-area: telemetry;
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+  flex-wrap: nowrap;
 }
 
 @media (min-width: 768px) {
@@ -197,6 +235,8 @@
   display: flex;
   align-items: center;
   gap: var(--space-3);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .telemetryRight {
@@ -211,6 +251,7 @@
 .telemetryValue {
   color: var(--color-ink-muted);
   font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
 .keyframeDots {
@@ -247,6 +288,7 @@
 
 .telemetryScroll {
   margin-left: auto;
+  white-space: nowrap;
 }
 
 /* ============== MANIFESTO ============== */
@@ -255,7 +297,7 @@
 }
 
 .manifestoHeader {
-  margin-bottom: var(--space-7);
+  margin-bottom: var(--space-8);
 }
 
 .manifestoEyebrow {
@@ -282,8 +324,8 @@
 .manifestoColumns {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-5);
-  margin-bottom: var(--space-7);
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
 }
 
 @media (min-width: 768px) {
@@ -295,13 +337,14 @@
 @media (min-width: 1200px) {
   .manifestoColumns {
     grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-7);
   }
 }
 
 .manifestoCol {
   font-size: var(--fs-body-lg);
   color: var(--color-ink-muted);
-  line-height: 1.65;
+  line-height: 1.7;
   margin: 0;
 }
 
