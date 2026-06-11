@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { site } from "@/lib/site";
+import { TimecodeHud } from "@/components/timecode-hud";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -30,19 +31,7 @@ export default function HomePage() {
       <section className={styles.hero} aria-labelledby="hero-title">
         <div className={`container ${styles.heroInner}`}>
           {/* Timecode HUD — top right, within grid */}
-          <div className={styles.timecodeHud} aria-hidden>
-            <div className={styles.timecodeLine}>
-              <span>00:12:08:16</span>
-            </div>
-            <div className={styles.timecodeMeta}>
-              <span>1920 × 1080</span>
-              <span>24FPS</span>
-            </div>
-            <div className={styles.timecodeStatus}>
-              <span className={styles.statusDot} />
-              <span>STATUS: ONLINE</span>
-            </div>
-          </div>
+          <TimecodeHud />
 
           <div className={styles.heroCopy}>
             <div>
