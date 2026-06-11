@@ -1,40 +1,15 @@
 export type SpeakingTopic = {
   title: string;
-  description: string;
-  tag: string;
 };
 
 export const speakingTopics: SpeakingTopic[] = [
-  {
-    title: "Creative entrepreneurship",
-    description: "Craft → company → reinvention",
-    tag: "Strategy"
-  },
-  {
-    title: "Narratives that ship",
-    description: "Creative direction for complex systems",
-    tag: "Creative"
-  },
-  {
-    title: "Creative technology in practice",
-    description: "Prototypes, experiences, constraints",
-    tag: "Technology"
-  },
-  {
-    title: "Human-centred AI workflows",
-    description: "Clarity, tone, adoption, accountability",
-    tag: "AI"
-  },
-  {
-    title: "Education for the next creative era",
-    description: "Practice-led, industry-real, AI-aware",
-    tag: "Education"
-  },
-  {
-    title: "Community + launches",
-    description: "Participation loops and momentum — Web3 lessons that transfer",
-    tag: "Web3"
-  }
+  { title: "Creative business & entrepreneurship" },
+  { title: "Strategy and positioning" },
+  { title: "Sales, finance, hiring" },
+  { title: "Creative direction" },
+  { title: "Human-centred technology" },
+  { title: "AI agents & creative automation" },
+  { title: "Systems thinking for creative teams" },
 ];
 
 export type Engagement = {

@@ -54,7 +54,7 @@ export function ProjectCard({ project, variant = "grid", active = false, size = 
             )}
           </div>
           <span className={styles.openCta}>
-            Open case study
+            Open →
             <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
               <line x1="4" y1="12" x2="20" y2="12" />
               <polyline points="14 6 20 12 14 18" />
@@ -102,7 +102,7 @@ export function ProjectCard({ project, variant = "grid", active = false, size = 
           )}
         </div>
         <span className={styles.cta}>
-          Open case study
+          Open →
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
             <line x1="4" y1="12" x2="20" y2="12" />
             <polyline points="14 6 20 12 14 18" />

@@ -17,11 +17,12 @@ type View = "grid" | "constellation";
 type CSSVar = React.CSSProperties & Record<`--${string}`, string | number>;
 
 const VENTURE_COLORS: Record<string, string> = {
-  "Creative Studio": "var(--color-electric-blue)",
-  Brand: "var(--color-warm-white)",
-  Education: "#8B7FFF",
-  Web3: "#4ECDC4",
-  TBD: "var(--color-ink-quiet)",
+  "Motion Design & Animation": "var(--color-electric-blue)",
+  "Film & Production": "#E8A87C",
+  "Creative Technology & AI": "#8B7FFF",
+  "Studios & Ventures": "var(--color-warm-white)",
+  "Notes & Explorations": "#4ECDC4",
+  "Speaking": "#C4B5FD",
 };
 
 const STAR_POSITIONS: Record<string, { x: number; y: number }> = {
@@ -135,7 +136,7 @@ export function WorkArchive({ projects, ventures, years }: Props) {
         <div className={styles.controls}>
           <div className={styles.controlsHead}>
             <div className={styles.controlsTitle}>
-              <span className="eyebrow">Work archive</span>
+              <span className="eyebrow">Work</span>
               <span className={styles.controlsCount}>· {filtered.length.toString().padStart(2, "0")} projects</span>
             </div>
             <div className={styles.controlsRight}>
@@ -146,7 +147,7 @@ export function WorkArchive({ projects, ventures, years }: Props) {
                   aria-selected={view === "constellation"}
                   className={`${styles.viewBtn} ${view === "constellation" ? styles.viewBtnActive : ""}`}
                   onClick={() => setView("constellation")}
-                  aria-label="Constellation view"
+                  aria-label="Constellation"
                 >
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.2" aria-hidden>
                     <circle cx="3" cy="3" r="1.2" />
@@ -166,7 +167,7 @@ export function WorkArchive({ projects, ventures, years }: Props) {
                   aria-selected={view === "grid"}
                   className={`${styles.viewBtn} ${view === "grid" ? styles.viewBtnActive : ""}`}
                   onClick={() => setView("grid")}
-                  aria-label="Grid view"
+                  aria-label="Grid"
                 >
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.2" aria-hidden>
                     <rect x="2" y="2" width="5" height="5" />
@@ -418,7 +419,7 @@ export function WorkArchive({ projects, ventures, years }: Props) {
                   </div>
                   <p className={styles.previewSummary}>{activeProject.summary}</p>
                   <Link href={`/work/${activeProject.slug}`} className={styles.previewCta}>
-                    {activeProject.kind === "tbd" ? "Get notified" : "Open case study"}
+                    {activeProject.kind === "tbd" ? "Get notified" : "Open →"}
                     <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
                       <line x1="4" y1="12" x2="20" y2="12" />
                       <polyline points="14 6 20 12 14 18" />

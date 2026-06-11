@@ -128,7 +128,7 @@
 
 .topicItem {
   display: grid;
-  grid-template-columns: 60px 1fr 24px;
+  grid-template-columns: 1fr 24px;
   align-items: center;
   gap: var(--space-5);
   padding: var(--space-5) 0;

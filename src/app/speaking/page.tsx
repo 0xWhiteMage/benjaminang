@@ -11,8 +11,8 @@ import {
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: "Speaking & Talks",
-  description: `${site.name} — empowering creative freelancers & entrepreneurs by sharing the journey of a young creative entrepreneur, and the lessons learned through the celebrations and downfalls.`,
+  title: "Speaking",
+  description: `Talks on building creative businesses that last, human-centred technology, and creating with AI people can trust. Invite ${site.name} to speak.`,
   alternates: { canonical: `${site.url}/speaking` },
 };
 
@@ -101,24 +101,13 @@ export default function SpeakingPage() {
             </h1>
             <p className={styles.kicker}></p>
             <p className={styles.lede}>
-              I speak about creative entrepreneurship, storytelling systems, and emerging tools.
-              From the perspective of someone who built studios, shipped campaigns, and now teaches
-              while exploring what&apos;s next.
+              I speak about the work at the edges — building creative businesses that last,
+              and building with AI in a way people can actually trust.
             </p>
             <div className={styles.ctas}>
               <ButtonLink href="/contact">Invite {site.name.split(" ")[0]} to speak</ButtonLink>
             </div>
-            <ul className={styles.availability}>
-              <li>
-                <span className="accent-dot" aria-hidden />
-                <span>Currently available</span>
-              </li>
-              <li aria-hidden>·</li>
-              <li>
-                <span className="accent-dot accent-dot--amber" aria-hidden />
-                <span>For conferences, events &amp; workshops</span>
-              </li>
-            </ul>
+
           </div>
             <div className={styles.visual}>
               <Image
@@ -146,12 +135,10 @@ export default function SpeakingPage() {
         </div>
         <h2 id="topics-title" className="sr-only">Speaking topics</h2>
         <ol className={styles.topicList}>
-          {speakingTopics.map((t, i) => (
+          {speakingTopics.map((t) => (
             <li key={t.title} className={styles.topicItem} data-reveal>
-              <span className={`${styles.topicNum} mono`}>{t.tag}</span>
               <div>
                 <h3>{t.title}</h3>
-                <p>{t.description}</p>
               </div>
               <span className={styles.topicArrow} aria-hidden>
                 <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">

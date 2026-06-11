@@ -137,18 +137,6 @@
   margin-top: 2px;
 }
 
-.discList {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 4px;
-  font-size: var(--fs-eyebrow);
-  letter-spacing: var(--tracking-eyebrow);
-  text-transform: uppercase;
-  color: var(--color-ink);
-}
-
 /* ============== FORM ============== */
 .form {
   display: grid;
@@ -252,6 +240,12 @@
 .err { color: #ff8585; }
 
 .actions { display: grid; }
+
+.helper {
+  color: var(--color-ink-muted);
+  font-size: var(--fs-body-sm);
+  margin: calc(-1 * var(--space-2)) 0 0;
+}
 
 .privacy {
   display: inline-flex;

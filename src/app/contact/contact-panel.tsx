@@ -1,20 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import { Button, ButtonLink } from "@/components/button";
+import { Button } from "@/components/button";
 import { site } from "@/lib/site";
 import styles from "./contact-panel.module.css";
 
 const PROJECT_TYPES = [
-  "Hiring / role opportunity",
-  "Advisory / consulting",
-  "Brand film",
-  "Campaign motion",
-  "Motion design / idents",
-  "Explainer film",
-  "Event / stage film",
-  "Speaking engagement",
-  "Workshop / mentorship",
+  "Motion",
+  "Film",
+  "Brand",
+  "Creative Tech",
+  "Education",
+  "Speaking",
   "Other",
 ] as const;
 
@@ -85,7 +82,7 @@ export function ContactPanel() {
 
     // Client-side only — just show success (no backend in static export).
     setStatus("success");
-    setMessage("Inquiry received. Expect a reply within 1–2 business days.");
+    setMessage("Thanks — your note is in. Expect a reply within 1–2 business days.");
     form.reset();
   }
 
@@ -94,9 +91,6 @@ export function ContactPanel() {
       <div className={`container ${styles.grid}`}>
         <aside className={styles.aside}>
           <div>
-            <ButtonLink href="/contact" variant="primary">
-              Contact {site.name.split(" ")[0]}
-            </ButtonLink>
             <p className={styles.response}>
               <span aria-hidden>⏱</span> Typically responds within 1–2 business days
             </p>
@@ -155,13 +149,6 @@ export function ContactPanel() {
               </li>
             </ul>
           </div>
-
-          <ul className={styles.discList}>
-            <li>Innovation</li>
-            <li>Strategy</li>
-            <li>Design management</li>
-            <li>Education</li>
-          </ul>
         </aside>
 
         <form
@@ -170,7 +157,7 @@ export function ContactPanel() {
           noValidate
           aria-labelledby="form-title"
         >
-          <h2 id="form-title" className={styles.formTitle}>Send an inquiry</h2>
+          <h2 id="form-title" className={styles.formTitle}>Start a conversation</h2>
 
           {/* Honeypot */}
           <div className={styles.honeypot} aria-hidden>
@@ -189,6 +176,10 @@ export function ContactPanel() {
             <SelectField label="Project Type" id="projectType" name="projectType" options={PROJECT_TYPES} />
             <SelectField label="Budget Range" id="budget" name="budget" options={BUDGETS} />
           </div>
+
+          <p className={styles.helper}>
+            Rough budgets and half-formed ideas are welcome — they help me point you to the right approach.
+          </p>
 
           <div className={styles.field}>
             <label htmlFor="message">
@@ -216,7 +207,7 @@ export function ContactPanel() {
 
           <div className={styles.actions}>
             <Button type="submit" disabled={status === "submitting"}>
-              {status === "submitting" ? "Sending…" : "Send inquiry"}
+              {status === "submitting" ? "Sending…" : "Send message"}
             </Button>
           </div>
 

@@ -5,8 +5,8 @@ import { WorkArchive } from "./work-archive";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: "Work archive",
-  description: `A curated selection of projects by ${site.name} across creative direction, motion design, brand film, and campaigns.`,
+  title: "Work & Archive",
+  description: `A working notebook — motion, film, brand work, companies and creative-technology experiments by ${site.name} and Genesis Motion Design.`,
   alternates: { canonical: `${site.url}/work` },
 };
 
@@ -15,7 +15,7 @@ const breadcrumbLd = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: site.url },
-    { "@type": "ListItem", position: 2, name: "Work archive", item: `${site.url}/work` },
+    { "@type": "ListItem", position: 2, name: "Work", item: `${site.url}/work` },
   ],
 };
 
@@ -34,12 +34,12 @@ export default function WorkPage() {
       />
       <header className={styles.head}>
         <div className="container">
-          <span className="eyebrow">Work archive · {projects.length} projects</span>
+          <span className="eyebrow">Work · {projects.length} projects</span>
           <h1 className={styles.title}>
-            Work archive<span className={styles.dot}>.</span>
+            Work<span className={styles.dot}>.</span>
           </h1>
           <p className={styles.lede}>
-            Four pillars of my work. Building studios, shipping creative direction, exploring new tech, and teaching what I learn.
+            Less a portfolio than a working notebook — the projects, studios, ventures and experiments that make up a life spent bridging creativity and technology.
           </p>
         </div>
       </header>

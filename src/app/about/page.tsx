@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import { site } from "@/lib/site";
-import { AboutTimeline } from "./about-timeline";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "About",
-  description: `${site.name} — designer & animator by training, creative business strategist through experience. A multidisciplinary foundation from strategy to execution.`,
+  description: `How a motion designer's work widened into companies, films, products and ideas — and the throughline beneath it all: understanding complex systems, and bringing out the best in them.`,
   alternates: { canonical: `${site.url}/about` },
 };
 
@@ -20,111 +19,84 @@ const breadcrumbLd = {
 
 const milestones = [
   {
-    index: "01",
-    year: "2011",
-    org: "CRITICA",
-    title: "School Internship, CRITICA",
-    detail:
-      "3-month school internship at CRITICA, a Singapore-based boutique design studio. Part of the NYP Motion Graphics & Broadcast Design diploma.",
-    kind: "Education",
-    expanded: true,
-  },
-  {
-    index: "02",
     year: "2012",
     title: "Nanyang Polytechnic",
     detail: "Diploma in Motion Graphics and Broadcast Design.",
-    kind: "Education",
-    expanded: false,
   },
   {
-    index: "03",
     year: "2012",
-    org: "Blind",
-    title: "Los Angeles Internship",
+    title: "Internship at Blind, Los Angeles",
     detail:
       "Selected for an internship at Blind, Los Angeles. Immersed in a fast-paced creative environment where design, story, and motion came together to build bold ideas for global brands.",
-    kind: "Career",
-    expanded: true,
   },
   {
-    index: "04",
     year: "2015",
-    title: "Founded Genesis",
+    title: "Founded Genesis Motion Design",
     detail:
       "Founded Genesis Motion Design, an award-winning boutique motion design & animation studio in Singapore, to bridge the gap between Asian hustle and American playfulness.",
-    kind: "Venture",
-    focus: ["Brand films", "Campaigns", "Experiences"],
-    expanded: true,
   },
   {
-    index: "05",
-    year: "2016",
-    title: "Adjunct Lecturer, 3dsense Media School",
-    detail:
-      "Taught Motion Graphics as an adjunct lecturer at 3dsense Media School, Singapore — a specialist school for animation, VFX and games.",
-    kind: "Teaching",
-    expanded: true,
-  },
-  {
-    index: "06",
-    year: "2018",
-    title: "Founded Balance Creative — production structure + workflows",
-    detail:
-      "Founded Balance Creative, an award-winning boutique video production agency operating across Ho Chi Minh City, Vietnam and Singapore.",
-    kind: "Venture",
-    focus: ["Video production", "Cross-border"],
-    expanded: false,
-  },
-  {
-    index: "07",
-    year: "2022",
-    title: "Adjunct Lecturer, NYP — School of Design & Media",
-    detail:
-      "Practice-led modules in Advertising Conceptualisation / Design Thinking, Storyboarding, Moodboards & Styleframes, 3D (Cinema 4D), Motion Graphics (After Effects), and Social Media Content. Teaching is the work that pays forward.",
-    kind: "Teaching",
-    expanded: true,
-  },
-  {
-    index: "08",
-    year: "2026",
-    title: "MA Digital Management, Hyper Island",
-    detail:
-      "Master of Arts in Digital Management (Class of 2026, part-time) — degree awarded by Teesside University, UK. Coursework in digital transformation, business leadership, and creative problem-solving. Master's thesis: human-centred design principles for AI-powered client-communication agents — how tone, transparency, and human-in-the-loop workflows build client trust in creative services.",
-    kind: "Education",
-    expanded: true,
-  },
-  {
-    index: "09",
-    year: "Today",
-    title: "Creative entrepreneur — AI workflows + education",
-    detail:
-      "Exploring creative technology, human-centred AI workflows, Web3, and education while leading creative direction.",
-    kind: "Today",
-    expanded: false,
+    year: "Since",
+    title: "Grew from creative execution into strategy, leadership, production, education and creative technology.",
+    detail: "",
   },
 ];
 
-const disciplines = [
-  "Narrative & Strategy",
+const skills = [
+  "Business Management",
+  "Brand Positioning & Marketing Strategy",
+  "Outreach & Publicity",
+  "Sales & Business Development",
+  "Finance & Budgeting",
+  "Human Resource Management",
+  "Project Management",
   "Creative Direction",
-  "Delivery & Stakeholders",
-  "Creative Technology & AI Workflows",
-  "Education"
+  "Art Direction",
+  "Motion Graphics",
+  "Graphic Design",
+  "Video Production",
+  "Sound Engineering",
 ];
 
-const story = [
-  "I started in motion design because I loved the craft. The idea that you could make people feel something through movement, timing, and visual rhythm — that hooked me.",
-  "Then I built studios. Genesis Motion Design grew from a one-person operation to a 15-person team. We shipped campaigns for brands across Asia. I learned how to lead creative direction, manage production, and build cultures that deliver.",
-  "Balance Creative came next. A deliberate build — focused on production structure, workflows, and the systems that make creative work repeatable. Not just making things look good. Making things work.",
-  "Along the way, I started teaching at Nanyang Polytechnic. Practice-led curriculum. Industry-real. AI-aware. I wanted to give students what I wish I had when I started.",
-  "Now I'm exploring creative technology, human-centred AI workflows, and Web3. Not as buzzwords. As tools that change how we tell stories, build teams, and ship work."
+const principles = [
+  "Start with the human, not the technology.",
+  "Make complex things simple, never simplistic.",
+  "Build the thing that doesn't exist yet.",
+  "Stay a beginner on purpose.",
+  "Stand in the intersections.",
+  "Trust is the real interface.",
+  "Taste is a form of thinking.",
+  "Finish things — then question them.",
 ];
 
-const pullquote = {
-  text: "I build stories, teams, and experiments. The foundation is creative direction. The curiosity is what's next.",
-  cite: "Benjamin Ang",
-};
+const interests = [
+  {
+    title: "How systems behave",
+    description: "Economics, markets, housing, geopolitics",
+  },
+  {
+    title: "How minds work",
+    description: "Psychology, leadership, trust",
+  },
+  {
+    title: "How machines think",
+    description: "AI agents, local LLMs, creative automation",
+  },
+  {
+    title: "How things get made",
+    description: "Product, entrepreneurship, motion, film",
+  },
+  {
+    title: "How worlds connect",
+    description: "The throughline behind all of it",
+  },
+];
+
+const lead = "Most introductions start with a job title. Mine has stopped fitting.";
+
+const openingNarrative = `For years the honest answer was motion designer — true, until it wasn't enough. What I actually loved was never the animation; it was the making — and motion was just the first material I learned to think with. Once I understood that, the lines between motion, business, technology and storytelling dissolved; they're all the same act in different materials. But the making was never the point. It was how I think — and I've come to trust ideas over titles, and a question over any single craft.`;
+
+const returningTo = `How complex systems actually work — and how to bring out the best in them. As AI becomes the substrate under modern work, that stops being abstract and becomes urgent — and the hard part was never capability. It's trust.`;
 
 export default function AboutPage() {
   return (
@@ -135,83 +107,107 @@ export default function AboutPage() {
         <div className="container">
           <span className="eyebrow">About {site.name}</span>
           <h1 className={styles.title}>
-            Designer &amp; animator by training.
-            <br />
-            Creative entrepreneur by choice<span className={styles.dot}>.</span>
+            {lead}
           </h1>
           <p className={styles.lede}>
-            I build stories, teams, and experiments. My foundation is creative direction and storytelling. My current curiosity lives in creative technology, human-centred AI workflows, Web3, and education.
+            {openingNarrative}
           </p>
-          <ul className={styles.tags}>
-            <li>Singapore-based</li>
-            <li aria-hidden>·</li>
-            <li>Creative direction</li>
-            <li aria-hidden>·</li>
-            <li>Strategy</li>
-            <li aria-hidden>·</li>
-            <li>Creative technology</li>
-            <li aria-hidden>·</li>
-            <li>Education</li>
-            <li aria-hidden>·</li>
-            <li>Founder (Genesis Motion Design, Balance)</li>
-            <li aria-hidden>·</li>
-            <li>Adjunct Lecturer (NYP)</li>
-          </ul>
         </div>
       </header>
 
-      <AboutTimeline milestones={milestones} />
-
-      <section className={`container ${styles.story}`} aria-labelledby="story-title">
+      <section className={`container ${styles.story}`} aria-labelledby="returning-title">
         <div className={styles.storyInner}>
           <div className={styles.storyLabel}>
-            <span className={styles.storyLabelText}>01 / The story</span>
-            <h2 id="story-title" className={styles.storyHeading}>
-              From craft to company to what's next.
+            <span className={styles.storyLabelText}>02 / What I keep returning to</span>
+            <h2 id="returning-title" className={styles.storyHeading}>
+              {returningTo}
             </h2>
           </div>
           <div className={styles.storyBody}>
-            {story.map((p, i) => (
-              <p key={i} className={styles.storyPara}>
-                {p}
-              </p>
-            ))}
-            <figure className={styles.pullquote}>
-              <blockquote>
-                <p>&ldquo;{pullquote.text}&rdquo;</p>
-              </blockquote>
-              <figcaption>— {pullquote.cite}</figcaption>
-            </figure>
+            <p className={styles.storyPara}>
+              {returningTo}
+            </p>
           </div>
         </div>
       </section>
 
-      <section className={`container ${styles.disc}`} aria-labelledby="disc-title">
-        <div className={styles.discIntro}>
-          <span className="eyebrow">Experience &amp; disciplines</span>
-          <h2 id="disc-title" className={styles.discTitle}>
-            Five pillars. From narrative to technology to education.
+      <section className={`container ${styles.principles}`} aria-labelledby="principles-title">
+        <div className={styles.principlesIntro}>
+          <span className="eyebrow">Principles</span>
+          <h2 id="principles-title" className={styles.principlesTitle}>
+            How I work
           </h2>
-          <a href="/credentials" className={styles.discLink}>
-            See credentials &amp; press
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden>
-              <line x1="4" y1="12" x2="20" y2="12" />
-              <polyline points="14 6 20 12 14 18" />
-            </svg>
-          </a>
         </div>
-        <ul className={styles.discGrid}>
-          {disciplines.map((t, i) => (
-            <li key={i} className={styles.discItem} data-reveal>
-              <span className={`${styles.discNum} mono`}>{String(i + 1).padStart(2, "0")}</span>
-              <span className={styles.discName}>{t}</span>
-              <span className={styles.discDot} aria-hidden />
+        <ul className={styles.principlesList}>
+          {principles.map((p, i) => (
+            <li key={i} className={styles.principlesItem}>
+              <span className={`${styles.principlesNum} mono`}>{String(i + 1).padStart(2, "0")}</span>
+              <span className={styles.principlesText}>{p}</span>
             </li>
           ))}
         </ul>
-        <p className={styles.discSummary}>
-          <span className="mono">{disciplines.length} DISCIPLINES</span>
-        </p>
+      </section>
+
+      <section className={`container ${styles.interests}`} aria-labelledby="interests-title">
+        <div className={styles.interestsIntro}>
+          <span className="eyebrow">What I'm paying attention to</span>
+          <h2 id="interests-title" className={styles.interestsTitle}>
+            Interests as investigations
+          </h2>
+        </div>
+        <ul className={styles.interestsList}>
+          {interests.map((item, i) => (
+            <li key={i} className={styles.interestsItem}>
+              <h3 className={styles.interestsItemTitle}>{item.title}</h3>
+              <p className={styles.interestsItemDesc}>{item.description}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className={`container ${styles.milestones}`} aria-labelledby="milestones-title">
+        <div className={styles.milestonesIntro}>
+          <span className="eyebrow">Milestones</span>
+          <h2 id="milestones-title" className={styles.milestonesTitle}>
+            The path — from polytechnic to practice.
+          </h2>
+        </div>
+        <details className={styles.milestonesToggle}>
+          <summary className={styles.milestonesSummary}>
+            <span>Show milestones</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden>
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </summary>
+          <ul className={styles.milestonesList}>
+            {milestones.map((m, i) => (
+              <li key={i} className={styles.milestonesItem}>
+                <span className={`${styles.milestonesYear} mono`}>{m.year}</span>
+                <div className={styles.milestonesContent}>
+                  <h3 className={styles.milestonesItemTitle}>{m.title}</h3>
+                  {m.detail && <p className={styles.milestonesItemDetail}>{m.detail}</p>}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </details>
+      </section>
+
+      <section className={`container ${styles.skills}`} aria-labelledby="skills-title">
+        <div className={styles.skillsIntro}>
+          <span className="eyebrow">Skills / experience matrix</span>
+          <h2 id="skills-title" className={styles.skillsTitle}>
+            {skills.length} skills across business, creative, and technical domains.
+          </h2>
+        </div>
+        <ul className={styles.skillsList}>
+          {skills.map((s, i) => (
+            <li key={i} className={styles.skillsItem}>
+              <span className={`${styles.skillsNum} mono`}>{String(i + 1).padStart(2, "0")}</span>
+              <span className={styles.skillsName}>{s}</span>
+            </li>
+          ))}
+        </ul>
       </section>
     </>
   );

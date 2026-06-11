@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: `Get in touch with ${site.name}. For project enquiries, speaking invitations, and strategic collaborations.`,
+  description: `Start a conversation about something ambitious — creative, technology, or somewhere in between. Collaborate with ${site.name}.`,
   alternates: { canonical: `${site.url}/contact` },
 };
 
@@ -31,11 +31,13 @@ export default function ContactPage() {
             <br /> something meaningful<span className={styles.dot}>.</span>
           </h1>
           <p className={styles.lede}>
-            I'm open to conversations across innovation, strategy planning,
-            design management, and education. I also take on selected creative
-            direction and advisory work. If you're hiring, building an innovation
-            function, or shaping how teams adopt new tools, I'd love to hear what
-            you're working on.
+            The best collaborations I've had didn't start with a brief — they
+            started with a good conversation. This is an open invitation to one.
+          </p>
+          <p className={styles.lede}>
+            I'm interested in work at the edges: creative + technology, strategy
+            + execution, ambitious things that need someone comfortable in more
+            than one world.
           </p>
         </div>
       </header>

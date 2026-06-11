@@ -1,9 +1,9 @@
 export const site = {
   name: "Benjamin Ang",
   initials: "BA",
-  tagline: "Creative Entrepreneur · Creative Direction · Storytelling",
+  tagline: "Creative Technologist, Designer & Founder",
   description:
-    "Creative entrepreneur working at the intersection of storytelling, creative direction, and emerging tools. 10+ years building studios and shipping campaigns. Now exploring creative technology, human-centred AI workflows, Web3, and education.",
+    "Singapore-based creative technologist, entrepreneur, motion designer and filmmaker. He builds and leads creative companies, directs motion and brand films, and designs products, tools and AI-driven experiences at the intersection of creativity, technology and systems.",
   url: "https://benjaminang.tv",
   email: "hello@benjaminang.tv",
   location: "Singapore",
